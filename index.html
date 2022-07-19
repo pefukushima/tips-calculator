@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"
+    <title></title>
+</head>
+<body>
+    <div id="container">
+        <div>
+            <h1 class="title">Calculador com avaliação</h1>
+        </div>
+        <div>
+            <form class="formstyle" id="formstyle">
+                <label for="bill">
+                <p>Quanto ficou a conta?</p>
+                </label>
+                <p>
+                    R$ <input type="number" placeholder="insira número" name="bill" id="bill" class="formway" required>
+                </p>
+                <label for="Servicedone">
+                <p>Serviço foi bem prestado?</p>
+                </label>
+                <p>
+                    <select name="Servicedone" id="Servicedone" class="formnote" required>
+                        <option></option>
+                        <option value="0.1">10% - cobrança padrão</option>
+                        <option value="0.12">12% - satisfeito</option>
+                        <option value="0.13">13% - muito satisfeito</option>
+                        <option value="0.2">20% - ótimo</option>
+                    </select>
+                </p>
+                <label for="People">
+                <p>Número de pessoas a pagar</p>
+                </label>
+                <p>
+                    <input type="number" placeholder="insira número" name="People" id="People" class="formway" required> clientes 
+                </p>
+                <button type="submit" class="submitform"> Calcular</button>
+                <p id="totaltip">
+                    Total:
+                    R$<span id="gorjeta">0,00</span> por pessoa
+                </p>
+                <label for="Avaliation">
+                    <p>Gostou do nosso serviço? Deixe uma Sugestão, Critica ou Elogio
+                </label>
+                <p>
+                    <textarea cols="5" rows="5" placeholder="Conta pra gente sua opinião" 
+                name="avaliation" id="avaliation" class="textform"> </textarea>
+                </p>
+                <label for="radio">
+                Em uma escala de 1 a 10, qual probabilidade de você nos indicar? Sendo 1 péssimo e  10 ótimo.
+                </label>
+                <p class="radio">
+                    <input type="radio" name="textboxes" id="1">
+                    <label for="1">1</label>
+                    <input type="radio" name="textboxes" id="2">
+                    <label for="2">2</label>
+                    <input type="radio" name="textboxes" id="3">
+                    <label for="3">3</label>
+                    <input type="radio" name="textboxes" id="4">
+                    <label for="4">4</label>
+                    <input type="radio" name="textboxes" id="5">
+                    <label for="5">5</label>
+                    <input type="radio" name="textboxes" id="6">
+                    <label for="6">6</label>
+                    <input type="radio" name="textboxes" id="7">
+                    <label for="7">7</label>
+                    <input type="radio" name="textboxes" id="8">
+                    <label for="8">8</label>
+                    <input type="radio" name="textboxes" id="9">
+                    <label for="9">9</label>
+                    <input type="radio" name="textboxes" id="10">
+                    <label for="10">10</label>
+                </p>             
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"> </script>
+</body>
+</html>
